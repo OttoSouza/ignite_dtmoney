@@ -1,8 +1,9 @@
 import { createServer, Model } from "miragejs";
 
-export function startMirage() {
+export function startMirage({ environment = "development" }) {
   createServer({
     // models determina quais os "bancos de dados"
+    environment,
     models: {
       transaction: Model,
     },
@@ -12,24 +13,24 @@ export function startMirage() {
         transactions: [
           {
             id: 1,
-            title: "Desenvolvimento web",
-            amount: 12000,
-            type: "deposit",
+            title: "Iphone 12 pro",
+            amount: 8000,
+            type: "withdraw",
             category: "Venda",
             createdAt: new Date("2021-03-15 23:35:00"),
           },
           {
             id: 2,
-            title: "Iphone 12",
+            title: "Desenvolvimento web",
             amount: 6999,
-            type: "withdraw",
-            category: "Compra",
+            type: "deposit",
+            category: "Casa",
             createdAt: new Date("2021-03-15 23:35:00"),
           },
           {
             id: 3,
-            title: "Salario",
-            amount: 5000,
+            title: "Freela",
+            amount: 3000,
             type: "deposit",
             category: "Casa",
             createdAt: new Date("2021-03-15 23:35:00"),

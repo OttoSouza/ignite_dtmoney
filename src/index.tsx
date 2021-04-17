@@ -4,8 +4,10 @@ import { App } from "./App";
 import { startMirage } from "./service/mirage";
 
 
+if (process.env.NODE_ENV === "development") {
+  startMirage({ environment: "development" })
+}
 
-startMirage();
 
 ReactDOM.render(
   <React.StrictMode>

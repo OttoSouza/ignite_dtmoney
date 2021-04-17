@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
   margin-top: 4rem;
   table {
     width: 100%;
@@ -33,4 +33,14 @@ export const Container = styled.div `
       }
     }
   }
-`
+`;
+
+export const Button = styled.button`
+  border: none;
+  background: transparent;
+  svg {
+    width: 20px;
+    height: 20px;
+    color: var(--red);
+  }
+`;
