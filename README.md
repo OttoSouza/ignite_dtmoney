@@ -53,7 +53,5 @@ $ https://localhost:3000
 
 <br>
 
-# Acessar: https://worltrip.vercel.app/
-
 
 <img src="./src//assets/dtMoney.gif" alt="drawing" width="1000"/>
