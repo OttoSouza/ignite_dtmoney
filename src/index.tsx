@@ -4,8 +4,8 @@ import { App } from "./App";
 import { startMirage } from "./service/mirage";
 
 
-if (process.env.NODE_ENV === "development") {
-  startMirage({ environment: "development" })
+if (process.env.NODE_ENV === "production") {
+  startMirage({ environment: "production" })
 }
 
 
